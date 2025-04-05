@@ -6,4 +6,5 @@
 
 
 **Podcasts**
+[Sans Blueprint Podcast](https://www.sans.org/podcasts/blueprint/) They cover the MITRE Book, "11 Strategies of a World-Class Cybersecurity Operations Center". Strategy by strategy.
 
