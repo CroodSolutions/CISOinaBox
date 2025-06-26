@@ -1,8 +1,3 @@
-Perfect, thank you. I’ll create a Markdown-formatted overview that explains how security engineering and architecture principles, based on CIS18, can be applied to MITRE ATT\&CK to defend a typical small to medium-sized business or local government.
-
-I'll get started now and will let you know once it's ready for review.
-
-
 # Building a Defensible Security Architecture with CIS18 and MITRE ATT\&CK
 
 ## Security Architecture & Engineering Basics
