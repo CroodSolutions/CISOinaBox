@@ -111,7 +111,6 @@ The goal isn’t to slow business down, but to make it **both safer and more eff
 
 ## 5. Sample Secure Process Optimization Workflow
 
-```mermaid
 flowchart TD
     A[Start Process Mapping] --> B[Document Each Step]
     B --> C[Identify Systems & Data]
@@ -121,7 +120,6 @@ flowchart TD
     F --> G[Train Users and Document Changes]
     G --> H[Monitor, Review, and Optimize]
     H --> I[Repeat]
-```
 
 ---
 
