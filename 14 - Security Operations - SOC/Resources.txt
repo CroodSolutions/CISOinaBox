@@ -1,0 +1,10 @@
+# Resources
+
+**Books:**
+
+[MITRE Corporation: 11 Strategies of a World-Class Cybersecurity Operations Center] (https://www.mitre.org/sites/default/files/2022-04/11-strategies-of-a-world-class-cybersecurity-operations-center.pdf)
+
+
+**Podcasts**
+[Sans Blueprint Podcast](https://www.sans.org/podcasts/blueprint/) They cover the MITRE Book, "11 Strategies of a World-Class Cybersecurity Operations Center". Strategy by strategy.
+
