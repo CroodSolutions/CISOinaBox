@@ -26,7 +26,15 @@ Cybersecurity and IT offer dynamic, rewarding careers with many pathways—from 
 * Customer service and communication
 * Basic networking, OS (Windows, Mac, Linux)
 * Problem-solving and ticketing systems
-* **Certifications:** CompTIA IT Fundamentals (ITF+), CompTIA A+, Microsoft MCP
+* **Certifications:** 
+   CompTIA IT Fundamentals (ITF+) (https://www.comptia.org/en-us/certifications/itf/)
+   CompTIA Tech+ (https://www.comptia.org/en-us/certifications/tech/)
+   CompTIA A+ (https://www.comptia.org/en-us/certifications/a/)
+   CompTIA Network+ (https://www.comptia.org/en-us/certifications/network/)
+   CompTIA PCPro (https://www.comptia.org/en-us/certifications/pc-pro/)
+   CompTIA Soft Skills Essentials (https://www.comptia.org/en-us/certifications/soft-skills-essentials/)
+   Google IT Support (https://grow.google/certificates/it-support/)
+   Microsoft MCP (source)
 
 ### Career Tips
 
