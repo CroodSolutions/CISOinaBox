@@ -112,6 +112,9 @@ Cybersecurity boils down to understanding the attacker’s playbook, deploying l
 * [FIRST.org](https://www.first.org/)
 * [ACTRA](https://www.actraaz.org)
 * [https://github.com/hslatman/awesome-threat-intelligence](https://github.com/hslatman/awesome-threat-intelligence)
+* [https://otx.alienvault.com/](https://otx.alienvault.com/)
+* [https://exchange.xforce.ibmcloud.com/(https://exchange.xforce.ibmcloud.com/)
+* [https://www.virustotal.com](https://www.virustotal.com/gui/home/upload)
 
 ---
 
