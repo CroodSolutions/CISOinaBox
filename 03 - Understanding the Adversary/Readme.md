@@ -110,6 +110,8 @@ Cybersecurity boils down to understanding the attacker’s playbook, deploying l
 * [MS-ISAC](https://www.cisecurity.org/ms-isac)
 * [CISA Cybersecurity Resources](https://www.cisa.gov/topics/cybersecurity)
 * [FIRST.org](https://www.first.org/)
+* [ACTRA](https://www.actraaz.org)
+* [https://github.com/hslatman/awesome-threat-intelligence](https://github.com/hslatman/awesome-threat-intelligence)
 
 ---
 
