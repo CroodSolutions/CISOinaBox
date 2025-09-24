@@ -4,6 +4,23 @@
 
 Cyber attacks are a growing threat to organizations of all sizes. Small and medium businesses (SMBs) and local governments, in particular, are increasingly targeted as larger enterprises harden their defenses. A *cyber attack* can take many forms—data breaches, malware infections, phishing scams, ransomware, DDoS, spyware, and more. These attacks are launched by *threat actors* (e.g., cybercriminal gangs, nation-state hackers, or insiders) seeking to steal data, disrupt operations, or extort money. To protect against such threats, it’s important to understand how cyber attacks work, how to defend and respond, and how sharing intelligence and working collectively can strengthen our security. This overview begins high-level and then introduces technical depth, defining key terms along the way.
 
+
+## Special Considerations for Small and Medium Businesses (SMBs)
+
+Small and medium businesses face unique cybersecurity challenges that differ from large enterprises:
+
+* **Limited Resources:** SMBs often lack dedicated security teams, specialized tools, and budget for comprehensive security solutions.
+* **Skill Gaps:** Finding and retaining cybersecurity expertise can be particularly challenging for smaller organizations.
+* **High Impact of Incidents:** A single security incident can have a disproportionately large impact on an SMB's operations and reputation.
+* **Different Threat Landscape:** While large enterprises may be targeted by nation-state actors, SMBs are more commonly targeted by opportunistic attackers using automated tools and well-known attack methods.
+
+Despite these challenges, SMBs can implement effective security measures by focusing on:
+* Prioritizing basic security hygiene (patching, backups, MFA)
+* Leveraging cloud security tools that provide enterprise-level protection at lower cost
+* Participating in threat intelligence sharing communities
+* Building relationships with trusted security partners
+
+
 ---
 
 ## How Cyber Attacks Work: Vectors and the Kill Chain
@@ -37,7 +54,7 @@ Defending against cyber threats involves a multi-pronged approach, often summari
 
 No prevention is foolproof, so layered defense is essential. The formula for effective security:
 `P > D + R`
-(Prevention time > Detection time + Response time)
+(Prevention time -> Detection time + Response time)
 
 ---
 
@@ -106,16 +123,12 @@ Cybersecurity boils down to understanding the attacker’s playbook, deploying l
 ## Top Resources
 
 * [Lockheed Martin Cyber Kill Chain®](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
-* [MITRE ATT\&CK®](https://attack.mitre.org/)
+* [MITRE ATT&CK®](https://attack.mitre.org/)
 * [MS-ISAC](https://www.cisecurity.org/ms-isac)
 * [CISA Cybersecurity Resources](https://www.cisa.gov/topics/cybersecurity)
 * [FIRST.org](https://www.first.org/)
 * [ACTRA](https://www.actraaz.org)
 * [https://github.com/hslatman/awesome-threat-intelligence](https://github.com/hslatman/awesome-threat-intelligence)
 * [https://otx.alienvault.com/](https://otx.alienvault.com/)
-* [https://exchange.xforce.ibmcloud.com/(https://exchange.xforce.ibmcloud.com/)
+* [https://exchange.xforce.ibmcloud.com](https://exchange.xforce.ibmcloud.com/)
 * [https://www.virustotal.com](https://www.virustotal.com/gui/home/upload)
-
----
-
-Let me know if you want this as a downloadable file or formatted for a specific platform!
