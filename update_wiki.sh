@@ -24,6 +24,7 @@ echo "Generating sidebar..."
 echo "### CISO in a Box" > _Sidebar.md
 echo "" >> _Sidebar.md
 echo "* [Home](Home)" >> _Sidebar.md
+echo "* [Contributing](Contributing)" >> _Sidebar.md
 
 # Copy and rename files
 echo "Copying and renaming files..."
@@ -47,6 +48,11 @@ for dir in ../[0-9]*; do
     fi
   fi
 done
+
+# Copy contributing guide
+if [ -f "../CONTRIBUTING.md" ]; then
+  cp "../CONTRIBUTING.md" "Contributing.md"
+fi
 
 # Create a Home page
 if [ -f "../Start Here.md" ]; then
