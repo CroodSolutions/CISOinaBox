@@ -3,14 +3,22 @@ Don't Panic!!
 Security does not have to be a difficult or intimidating topic.  
 
 If you are a small to medium sized organization looking to improve your security, start with a few basic things:
- - Make sure you have antivirus setup on all machines / properly enabled.
- - Use MFA everywhere you can.
- - Select strong and unique passwords (sometimes a password manager can help).
- - Set all your systems and software to auto-update or implement a process to manage updates and patches.
- - Talk to your employees about phishing and malware (basic awareness).
- - Take a closer look at what is internet facing, and get help if you have things that concern you in this regard.
- - If possible, have someone take a look at your cloud email (O365 or gmail) settings and any firwalls or Wi-Fi configurations you may have.
- - Be sure to back up your data and make sure you have back ups in a secure, different location from your busienss.  
+ - Make sure you have antivirus setup on all machines / properly enabled. *Why:* Protects against malware and viruses that can steal data or disrupt operations.
+ - Use MFA everywhere you can. *Why:* Adds an extra layer of security beyond passwords to prevent unauthorized access.
+ - Select strong and unique passwords (sometimes a password manager can help). *Why:* Weak or reused passwords are easily cracked, leading to account compromises.
+ - Set all your systems and software to auto-update or implement a process to manage updates and patches. *Why:* Fixes known vulnerabilities that attackers exploit.
+ - Talk to your employees about phishing and malware (basic awareness). *Why:* Human error is the leading cause of breaches; education reduces risks.
+ - Take a closer look at what is internet facing, and get help if you have things that concern you in this regard. *Why:* Exposed services can be entry points for attackers.
+ - If possible, have someone take a look at your cloud email (O365 or gmail) settings and any firewalls or Wi-Fi configurations you may have. *Why:* Misconfigurations in these can lead to data leaks or unauthorized access.
+ - Be sure to back up your data and make sure you have back ups in a secure, different location from your business. *Why:* Ensures recovery from ransomware, hardware failure, or other data loss events.
+
+## Next Steps: Assessing Your Current State
+
+Once you've implemented these basics, assess your current security posture:
+- Conduct a self-audit: Check off each tip and note any gaps.
+- Review recent events: Have there been any suspicious emails, failed logins, or system issues?
+- Use free tools: Try online vulnerability scanners or basic network mappers to identify exposed assets.
+- Seek professional help: If unsure, consult a cybersecurity expert or use services like those from your cloud provider.
 
 This repository is intended to provide a basic overview of key knowledge area of security, for those ready to move beyond the few bullet points above.
 

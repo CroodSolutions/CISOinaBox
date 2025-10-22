@@ -137,5 +137,3 @@ flowchart TD
 * [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 
 ## References
-
-Vive generated with GPT 4.1

@@ -215,5 +215,3 @@ Validates your security controls and reveals gaps in defenses.
 
 * [CIS Controls Overview](https://www.cisecurity.org/controls/cis-controls-list)
 
-Generated with GPT 4.1
-

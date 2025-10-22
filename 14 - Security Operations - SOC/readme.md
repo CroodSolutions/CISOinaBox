@@ -2,7 +2,7 @@
 
 **Cybersecurity Operations (SecOps)** – often implemented via a Security Operations Center (SOC) – form the backbone of an organization’s security program. SecOps combines people, processes, and technology to continuously monitor for threats and **detect, investigate, respond to, and recover from cyber incidents**. A mature SecOps program not only reacts to incidents but **proactively defends** the organization through automation and intelligence-driven decision making. This guide outlines key components of building a mature SecOps capability, aligned with best practices and frameworks (NIST, CIS Controls, ISO 27001), and provides recommendations based on organizational size and maturity level.
 
-*Figure: Analysts working in a Security Operations Center, monitoring systems in real-time.* Continuous monitoring and rapid response are hallmarks of SecOps, enabling organizations to contain attacks and minimize damage. As maturity increases, SecOps shifts from basic monitoring toward **proactive threat hunting and risk-based security operations**, ensuring the security program scales with evolving threats and business needs.
+Continuous monitoring and rapid response are hallmarks of SecOps, enabling organizations to contain attacks and minimize damage. As maturity increases, SecOps shifts from basic monitoring toward **proactive threat hunting and risk-based security operations**, ensuring the security program scales with evolving threats and business needs.
 
 ## **Establishing the Foundation**
 

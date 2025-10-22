@@ -41,6 +41,16 @@ Security experts use the concept of a **cyber kill chain** (originally by Lockhe
 6. **Command and Control (C2):** Compromised system connects to attacker.
 7. **Actions on Objectives:** Attacker achieves their goal (data theft, ransomware, disruption).
 
+```mermaid
+graph LR
+    A[Reconnaissance] --> B[Weaponization]
+    B --> C[Delivery]
+    C --> D[Exploitation]
+    D --> E[Installation]
+    E --> F[Command and Control]
+    F --> G[Actions on Objectives]
+```
+
 The kill chain highlights multiple points where defenders can potentially detect or block an attack. Interrupting an attack at any stage can significantly reduce the damage.
 
 ---

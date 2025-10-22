@@ -145,5 +145,3 @@ Use this data to **improve training, focus on weak spots, and show value to lead
 * [StaySafeOnline (NCA)](https://staysafeonline.org/)
 
 ## References
-
-Vive generated with GPT 4.1
