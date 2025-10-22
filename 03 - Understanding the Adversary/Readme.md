@@ -19,6 +19,8 @@ Despite these challenges, SMBs can implement effective security measures by focu
 * Leveraging cloud security tools that provide enterprise-level protection at lower cost
 * Participating in threat intelligence sharing communities
 * Building relationships with trusted security partners
+* **Using actionable threat intelligence:** Focus on sector-specific threats and opportunity disruption rather than enterprise-level attribution
+* **Making data-driven decisions:** Start with free/accessible intelligence sources and ask "what can we block today?" rather than "who is attacking us?"
 
 
 ---
@@ -58,27 +60,62 @@ No prevention is foolproof, so layered defense is essential. The formula for eff
 
 ---
 
-## Cyber Threat Intelligence (CTI): Staying Ahead of Threats
+## Actionable Threat Intelligence: Data-Driven Defense Decisions
 
-**Cyber threat intelligence (CTI)** is the collection and analysis of information about current or emerging threats. It answers: Who might attack us? What tactics do they use? What are the warning signs?
+**Cyber threat intelligence (CTI)** transforms raw threat data into specific defensive actions. Rather than focusing on attribution, effective CTI starts with your organization as the target and asks: "What actions do we need to take today?"
+
+* **The CTI Action Question:**
+  For every piece of intelligence, ask: "What specific defensive measure does this enable?" Intelligence without action is just information.
 
 * **Indicators of Compromise (IOCs):**
-  Forensic evidence suggesting a breach (e.g., malicious file hashes, suspicious IP addresses, unusual logins).
+  Forensic evidence suggesting a breach (e.g., malicious file hashes, suspicious IP addresses, unusual logins). Use IOCs to tune detection tools and block known malicious activity.
+
 * **Tactics, Techniques, and Procedures (TTPs):**
-  Tactics are high-level goals, techniques are the methods, and procedures are the specific implementations. TTPs describe the *behavior* of threat actors and are cataloged in frameworks like [MITRE ATT\&CK](https://attack.mitre.org/).
+  Tactics are high-level goals, techniques are the methods, and procedures are the specific implementations. TTPs describe the *behavior* of threat actors and are cataloged in frameworks like [MITRE ATT\&CK](https://attack.mitre.org/). Focus on TTPs that are relevant to your sector and size.
+
+* **Threat-Informed Defense Process:**
+  1. Identify threats targeting organizations like yours
+  2. Map their common attack patterns and requirements
+  3. Evaluate what opportunities you can eliminate
+  4. Implement controls that disrupt multiple threat actors
+
 * **Why It Matters:**
-  CTI transforms raw data into actionable insights—letting you anticipate, detect, and respond to threats faster and more effectively.
+  CTI enables data-driven security decisions—letting you prioritize defenses that actually reduce risk rather than chasing perfect attribution.
 
 ---
 
-## Tracking Adversaries: Using TTPs and Attribution
+## Threat-Informed Defense: Focus on What Matters
 
-Defenders track **threat actors** (adversaries) to understand who is attacking and how. This is known as *attribution*.
+Defenders should prioritize understanding **threat actor behaviors** that are relevant to their organization rather than chasing perfect attribution. Attribution can provide insights, but action matters more than attribution.
 
-* **Threat Actor Profiles:**
-  Groups (e.g., APT28, FIN7) are tracked by motives, tools, targets, and TTPs.
-* **Attribution and TTPs:**
-  Analysts use technical clues and intelligence—malware, infrastructure, tactics—to link incidents to actors. The MITRE ATT\&CK framework helps map observed activity to known groups, improving detection and response.
+* **Threat Actor Categories (When Attribution Helps):**
+  High-level categorization (e.g., ransomware group vs. nation-state) guides resource allocation and response planning, but specific group names often don't change immediate defensive actions.
+
+* **Behavior-Focused Intelligence:**
+  Focus on TTPs that work across multiple threat actors. For example, if ransomware groups in your sector commonly use Telegram for command and control, blocking Telegram eliminates an attack opportunity regardless of which specific group you're facing.
+
+* **Sector-Specific Threat Mapping:**
+  Start with your organization: What groups target companies like yours? What are their common entry points and persistence methods? Use this to prioritize defenses that disrupt the most likely attacks.
+
+---
+
+## Opportunity Disruption: Eliminating Attack Paths
+
+The most effective defense strategy focuses on **disrupting adversary opportunities** rather than trying to predict specific attacks. Adversaries need certain conditions to succeed—deny them systematically.
+
+* **Opportunity Assessment Framework:**
+  For each potential attack vector, evaluate: Is this service/technology necessary for our business operations? If not, blocking it eliminates attack opportunities across multiple threat actors.
+
+* **Practical Examples:**
+  - **Ransomware C2 Channels:** If top ransomware groups in your sector use Telegram for command and control, and your organization doesn't need Telegram, block it entirely. This single action disrupts dozens of potential attack campaigns.
+  - **Unused Protocols:** SMBv1, RDP exposed to the internet, or legacy authentication methods that aren't required for your business but are commonly exploited.
+  - **Vendor Configurations:** Default configurations that work for adversaries (like exposed admin interfaces) can be hardened or removed if not essential.
+
+* **SMB Advantage:**
+  Smaller organizations often have simpler networks, making opportunity disruption more feasible. Focus on eliminating "nice-to-have" services that create attack surfaces.
+
+* **Data-Driven Decisions:**
+  Use threat intelligence to identify which opportunities adversaries depend on, then systematically remove them. This approach scales better than trying to defend against every possible attack technique.
 
 ---
 
@@ -114,21 +151,22 @@ Organizations don’t face threats alone. **Threat intelligence sharing** amplif
 
 ## Conclusion
 
-Cybersecurity boils down to understanding the attacker’s playbook, deploying layered defenses, and learning from the broader community. Threat intelligence and collective defense make every defender stronger. Through vigilance, sharing, and collaboration, organizations of all sizes can protect themselves and their peers against evolving cyber threats.
+Effective cybersecurity focuses on disrupting adversary opportunities through data-driven decisions, not perfect knowledge of the attacker. By understanding threats that target organizations like yours, identifying common attack patterns, and systematically eliminating unnecessary attack surfaces, defenders can achieve better security outcomes. Threat intelligence becomes most valuable when it enables specific, actionable defensive measures.
 
-**Secure through knowledge, vigilant through sharing, stronger together—this is the essence of modern cyber defense.**
+**Act on intelligence, disrupt opportunities, defend collectively—this is the essence of practical cyber defense.**
 
 ---
 
 ## Top Resources
 
 * [Lockheed Martin Cyber Kill Chain®](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
-* [MITRE ATT&CK®](https://attack.mitre.org/)
-* [MS-ISAC](https://www.cisecurity.org/ms-isac)
-* [CISA Cybersecurity Resources](https://www.cisa.gov/topics/cybersecurity)
-* [FIRST.org](https://www.first.org/)
-* [ACTRA](https://www.actraaz.org)
-* [https://github.com/hslatman/awesome-threat-intelligence](https://github.com/hslatman/awesome-threat-intelligence)
-* [https://otx.alienvault.com/](https://otx.alienvault.com/)
-* [https://exchange.xforce.ibmcloud.com](https://exchange.xforce.ibmcloud.com/)
-* [https://www.virustotal.com](https://www.virustotal.com/gui/home/upload)
+* [MITRE ATT&CK®](https://attack.mitre.org/) - Focus on techniques relevant to your sector
+* [MS-ISAC](https://www.cisecurity.org/ms-isac) - Sector-specific threat intelligence
+* [CISA Cybersecurity Resources](https://www.cisa.gov/topics/cybersecurity) - Actionable alerts and best practices
+* [FIRST.org](https://www.first.org/) - Incident response coordination
+* [ACTRA](https://www.actraaz.org) - Arizona threat intelligence sharing
+* [Awesome Threat Intelligence](https://github.com/hslatman/awesome-threat-intelligence) - Curated CTI resources
+* [AlienVault OTX](https://otx.alienvault.com/) - Free threat intelligence platform
+* [IBM X-Force Exchange](https://exchange.xforce.ibmcloud.com/) - Collaborative threat intelligence
+* [VirusTotal](https://www.virustotal.com/gui/home/upload) - IOC analysis and sharing
+* [CISA Threat Actors](https://www.cisa.gov/topics/cyber-threats-and-advisories/cyber-threat-actor-naming) - Practical threat actor categorization
