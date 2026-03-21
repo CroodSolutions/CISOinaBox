@@ -1,67 +1,269 @@
 Please use the information below to ensure the same voice and style are used for all chapters of this project. This will help to ensure there is a consistent voice regardless of who supports this project. 
 
-You are writing as part of a CISO handbook designed for new CISOs and security managers stepping into leadership roles.
+# 🧭 CISO in a Box – Author Styling Guide
 
-Your writing must follow these voice and style requirements exactly:
+## 1. Purpose
 
-AUDIENCE:
-- The reader is technical and operational but lacks experience implementing security programs at scale
-- They understand concepts but struggle with execution
-- They need practical, real-world guidance they can apply immediately
+This guide defines how all content in the **CISO in a Box** project should be written, structured, and presented.
 
-VOICE:
-- Write like a pragmatic advisor who is friendly, warm, and optimistic
-- Sound like a coach or mentor, not an academic or compliance auditor
-- Be conversational but professional (no slang, no crude language)
+The goal is simple:
 
-TONE:
-- Be direct, structured, and supportive
-- Provide strong recommendations (not neutral options)
-- It is okay to say things like:
-  - “This is what works in most environments”
-  - “Most organizations struggle here because…”
-  - “Start with this approach…”
+> Every chapter should feel like it was written by the same experienced CISO—practical, actionable, and grounded in real-world execution.
 
-CONTENT STYLE:
-- Be highly actionable and implementation-focused
-- Always explain:
-  - What something is
-  - Why it matters
-  - How to actually implement it
-- Do NOT provide theory without execution guidance
+This is not a textbook.  
+This is a **hands-on field guide** for security leaders who need to take action.
 
-STRUCTURE:
-- Prioritize:
-  1. What to do
-  2. How to do it
-  3. Why it matters
-- Include step-by-step guidance where appropriate
+---
 
-TECHNICAL BALANCE:
-- 60% technical implementation
-- 40% business/organizational context (ownership, alignment, resistance)
+## 2. Audience
 
-REAL-WORLD CONTEXT:
-- Call out common challenges and failure points
-- Include practical insights like:
-  - “This is where things usually break down”
-  - “If this isn’t defined early, it creates friction later”
+This handbook is written for:
 
-TEMPLATES & OUTPUTS:
-- When applicable, include production-ready templates, checklists, or examples
-- Never include empty or placeholder templates
+- **New CISOs**
+- **Security Managers stepping into leadership roles**
 
-NON-NEGOTIABLES:
-- Never write in a dry or academic tone
-- Never introduce a concept without explaining how to use it
-- Never give guidance without context
+### Reader Profile
 
-WRITING STYLE:
-- Use clear, concise sentences
-- Break up dense content
-- Use bullets for steps and processes, but balance with explanation
+- **Framework Awareness**
+  - Familiar with NIST CSF, MITRE, PCI, GDPR, HIPAA
+  - Limited experience implementing them in a structured way
 
-SUCCESS CRITERIA:
-- The reader should be able to understand the material and begin applying it in their organization the next day
+- **Experience Level**
+  - Strong technical and operational background
+  - Limited experience with:
+    - Strategy
+    - Program development
+    - Cross-functional leadership
 
-Now, based on all of the above, complete the following task:
+### Core Challenge
+
+> The reader understands the concepts—but does not know how to execute them.
+
+---
+
+## 3. Voice & Tone
+
+### Voice Personality
+
+Write as:
+
+> A **pragmatic advisor** who is **friendly, warm, and optimistic**, helping others succeed through real-world experience.
+
+### Tone Positioning
+
+- **Primary:** Coach / Mentor  
+- **Secondary:** Experienced Peer  
+
+---
+
+### Communication Style
+
+- Be **direct, structured, and supportive**
+- Be **clear and actionable**
+- Be **factual and grounded**
+- Be **gentle, not aggressive**
+
+---
+
+### Be Opinionated (in a Helpful Way)
+
+Strong recommendations are encouraged.
+
+Use language like:
+
+- “This is what works in most environments”
+- “Most organizations struggle here because…”
+- “Start with this approach…”
+
+Avoid:
+
+- Neutral, vague, or non-committal guidance
+
+---
+
+### Informality Boundaries
+
+#### ✅ Acceptable
+
+- Conversational tone
+- Natural phrasing
+- Light personality
+
+#### ❌ Not Acceptable
+
+- Slang (e.g., “bro”, “dude”)
+- Crude or aggressive language
+- Dismissive tone
+
+---
+
+## 4. Content Expectations
+
+### Be Prescriptive
+
+Do not say:
+
+> “Here’s one way to do this”
+
+Instead:
+
+> “Here’s the recommended way to approach this”
+
+---
+
+### Be Action-Oriented
+
+Every section must answer:
+
+> “How do I actually do this?”
+
+---
+
+### Provide Full Context
+
+Never introduce a concept, framework, or control without explaining:
+
+- What it is  
+- Why it matters  
+- How to apply it  
+
+---
+
+### Include Practical Artifacts
+
+Every chapter should include **production-ready materials**, such as:
+
+- Templates  
+- Checklists  
+- Step-by-step processes  
+
+❌ Never include unpopulated or placeholder templates
+
+---
+
+## 5. Technical vs Business Balance
+
+- **60% Technical implementation**
+- **40% Business / organizational context**
+
+Each chapter must include:
+
+- Implementation details
+- Organizational realities:
+  - Ownership
+  - Alignment challenges
+  - Resistance
+  - Prioritization
+
+---
+
+## 6. Real-World Context (Required)
+
+Each chapter must:
+
+- Highlight common challenges
+- Explain where implementations fail
+- Address organizational friction
+
+Encouraged phrasing:
+
+- “Most organizations struggle here because ownership isn’t clearly defined”
+- “This is where processes tend to break down”
+- “If this isn’t addressed early, it creates friction later”
+
+---
+
+## 7. Chapter Structure Expectations
+
+Each chapter should generally follow this structure:
+
+### 1. Introduction
+
+- Explain the topic in plain language
+- Why it matters to a CISO
+
+### 2. What This Looks Like in Practice
+
+- Describe real-world application
+- Set expectations
+
+### 3. How to Implement
+
+- Step-by-step guidance
+- Clear execution path
+
+### 4. Key Components / Capabilities
+
+- Break down major areas
+- Explain each with context
+
+### 5. Common Pitfalls
+
+- Where organizations fail
+- What to avoid
+
+### 6. What Good Looks Like
+
+- Define success
+- Describe maturity indicators
+
+### 7. Templates / Checklists
+
+- Provide production-ready artifacts
+
+---
+
+## 8. Standalone Chapter Design
+
+- Each chapter must stand on its own
+- Do not assume the reader has read other chapters
+- Repeating key concepts is acceptable when needed
+
+---
+
+## 9. Non-Negotiables
+
+### Never:
+
+- Provide unpopulated templates  
+- Give guidance without context  
+- Introduce concepts without explaining how to use them  
+- Write in a dry or academic tone  
+
+---
+
+## 10. Writing Style Guidelines
+
+- Use **clear, concise sentences**
+- Break up dense content into readable sections
+- Use bullet points for:
+  - Steps
+  - Processes
+  - Key ideas
+
+Balance:
+
+- Narrative explanation + structured guidance
+
+---
+
+## 11. Voice Calibration Examples
+
+These represent the expected tone:
+
+- “Start simple—you can mature this over time.”
+- “Most organizations struggle here because ownership isn’t clearly defined.”
+- “If this isn’t addressed early, it will create friction later.”
+- “Focus on getting this working first before trying to scale it.”
+
+---
+
+## 12. Definition of a Great Chapter
+
+> A great chapter is one where the reader can easily understand the material and begin applying it in their organization the next day.
+
+---
+
+## 13. Final Guiding Principle
+
+> If the reader walks away understanding the concept but not knowing what to do next, the chapter failed.
