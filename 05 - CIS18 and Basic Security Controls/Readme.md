@@ -23,8 +23,41 @@
 ### Identity and Access Management 
 
 
+[CIS05 - Account Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS05%20-%20Account%20Management.md)
 
+[CIS06 - Access Control Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS06%20-%20Access%20Control%20Management.md)
 
+### Managing Vulnerabilities and Risks
+
+[CIS07 - Continuous Vulnerability Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS07%20-%20Continuous%20Vulnerability%20Management.md)
+
+[CIS16 - Application Software Security](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS16%20-%20Application%20Software%20Security.md)
+
+[CIS18 - Penetration Testing](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS18%20-%20Penetration%20Testing.md)
+
+[CIS15 - Service Provider Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS15%20-%20Service%20Provider%20Management.md)
+
+### Email and Web Protections
+
+[CIS09 - Email and Web Browser Protections](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS09%20-%20Email%20and%20Web%20Browser%20Protections.md)
+
+[CIS14 - Security Awareness and Skills Training](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS14%20-%20Security%20Awareness%20and%20Skills%20Training.md)
+
+### Network Defense
+
+[CIS12 - Network Infrastructure Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS12%20-%20Network%20Infrastructure%20Management.md)
+
+[CIS13 - Network Monitoring and Defense](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS13%20-%20Network%20Monitoring%20and%20Defense.md)
+
+### Detection and Response
+
+[CIS17 - Incident Response Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS17%20-%20Incident%20Response%20Management.md)
+
+[CIS08 - Log Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS08%20-%20Audit%20Log%20Management.md)
+
+### Malware Defense 
+
+[CIS10 - Malware Defenses](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS10%20-%20Malware%20Defenses.md)
 
 ## Listing of CIS18 Controls  
 
