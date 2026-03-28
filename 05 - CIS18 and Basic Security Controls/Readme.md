@@ -1,8 +1,12 @@
 ## Introduction and Overview
 
+For a general overview of the CIS18 controls and how they align with MITRE ATT&CK, check out [this](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/MITRE%20ATT%26CK%20and%20CIS18.md) section.
 
+Alternatively, we have some more detailed articles on each control, assembled into a flow.  **Under Construction**
 
 ## Logical Flow of Applying CIS18 Controls (According to Mike)
+
+It has always been helpful for me, to think of these controls in a more logical grouping, aligned with how we build and manage a security program. Here is a logical grouping that may help you organize control categories, in a way that helps build out a strategy for effective defense. 
 
 ### Finding and Protecting Assets
 
