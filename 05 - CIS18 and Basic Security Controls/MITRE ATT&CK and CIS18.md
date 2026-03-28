@@ -1,6 +1,6 @@
 # CIS 18 Security Controls: A Strategic Planning Guide for the Modern Enterprise
 
-Note that this guide was made with the help of Anthropic Opus 4.6, pointed to community resources as well as videos and presentations by the authors of this content. 
+Note that this guide was made with the help of Anthropic Opus 4.6, pointed to community resources as well as videos and presentations by the authors of the CISOinaBox project.  
 
 **Important Note:** We thought it was important to include a few examples of vendors that are popular for each product category, as a place to start - in particular, for people who are new to any of these topics. That said, this is **NOT an Endoresement** of any particular compay or product. In fact, there are some companies here that I am not very fond of personally. 
 
