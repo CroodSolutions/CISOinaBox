@@ -2,7 +2,29 @@
 
 
 
-## Logical Flow of Applying CIS18 Controls
+## Logical Flow of Applying CIS18 Controls (According to Mike)
+
+### Finding and Protecting Assets
+
+[CIS01 - Inventory and Control of Enterprise Assets](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS01%20-%20Inventory%20and%20Control%20of%20Enterprise%20Assets.md)
+
+[CIS02 - Inventory and Control of Software Assets](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS02%20-%20Inventory%20and%20Control%20of%20Software%20Assets.md)
+
+[CIS04 - Secure Configuration of Enterprise Assets and Software](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS04%20-%20Secure%20Configuration%20of%20Enterprise%20Assets%20and%20Software.md)
+
+### Protecting Data
+
+[CIS03 - Data Protection](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS03%20-%20Data%20Protection.md)
+
+
+[CIS11 - Data Recovery](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS11%20-%20Data%20Recovery.md)
+
+
+### Identity and Access Management 
+
+
+
+
 
 ## Listing of CIS18 Controls  
 
