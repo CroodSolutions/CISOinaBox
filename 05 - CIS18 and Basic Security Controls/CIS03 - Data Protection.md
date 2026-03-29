@@ -7,9 +7,14 @@
 And, that is obviously, a lot. So, how do we approach this topic in the real world?
 
  - Here are some tips as a general flow for getting started with data protection:
-   - Start by brainstorming with people who know the environment and map out as much as you can (you will still need to validate later).
+   - Start by brainstorming with people who know the environment and map out as much as you can.
    - Examine what platform solutions that are already in place, have data discovery or DLP solutions (e.g., O365, Google, etc.).
    - Determine gaps in visibility and enforcement, and prioritize these accordance to probability (of serious issue) and impact (if issue).
+   - Implement solutions to these gaps.
+   - Respond and remediate.
+
+**Here is a deeper cut:**
+
  - Examine solutions to bridge these gaps, considering:
    - Unstructured data (file shares, SharePoint, Google Drive, Box, etc.)
    - Structured data (databases and Enterprise Software / SaaS applications)
@@ -43,5 +48,6 @@ A few super important things to remember with inline DLP and such technologies:
 | Encryption (At Rest & In Transit) | Protects data through encryption | BitLocker, FileVault, VeraCrypt, Vormetric (Thales), AWS KMS, Azure Key Vault |
 | Cloud Access Security Broker (CASB) | Controls data flow to and from cloud applications | Netskope, Microsoft Defender for Cloud Apps, Palo Alto Prisma Access, Zscaler |
 | Data Discovery & Governance | Finds sensitive data across structured and unstructured repositories | Varonis, SailPoint, BigID, Spirion, Securiti |
+
 
 ---
