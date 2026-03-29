@@ -9,6 +9,7 @@ What does this really mean in the real world?
 There are a few critical scenarios that need to be figured out for account management:
  - How do new users get added, across the different types of users and input flows, which could come into play?
  - What roles, rights, or access levels should be inherited?
+ - In what ways is contractor access managed, reviewed, validated, and audited.  
  - How are rights or roles removed, if there is a change in employment or customer status:
    - What if an employee is fired?
    - What if they are transferred to a different job (more, less, or different access)?
