@@ -14,7 +14,7 @@
 
 | Solution Category | What It Does | Example Brands |
 |---|---|---|
-| Configuration Management / Hardening | Automates baseline configuration and compliance checks | CIS-CAT Pro (CIS Benchmarks), Microsoft GPO / Intune, Chef, Puppet, Ansible |
+| Configuration Management / Hardening | Automates baseline configuration and compliance checks | Terraform, CIS-CAT Pro (CIS Benchmarks), Microsoft GPO / Intune, Chef, Puppet, Ansible |
 | Cloud Security Posture Management (CSPM) | Detects misconfigurations in cloud infrastructure | Wiz, Prisma Cloud (Palo Alto), Microsoft Defender for Cloud, Orca Security |
 | Vulnerability / Configuration Scanning | Identifies deviations from secure baselines | Tenable Nessus, Qualys VMDR, Rapid7 InsightVM |
 | Image / Container Hardening | Ensures golden images and containers start from a secure baseline | CIS Hardened Images (marketplace images), Docker Bench, Aqua Security, Sysdig |
