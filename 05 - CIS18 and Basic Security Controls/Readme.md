@@ -10,6 +10,8 @@ It has always been helpful for me, to think of these controls in a more logical 
 
 ### Finding and Protecting Assets
 
+It is frequently said that you cannot protect what you do not know about.  These controls including knowing what enterprise assets exist in your environment, what software is in use (including Cloud), and making sure both are configured properly.  
+
 [CIS01 - Inventory and Control of Enterprise Assets](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS01%20-%20Inventory%20and%20Control%20of%20Enterprise%20Assets.md)
 
 [CIS02 - Inventory and Control of Software Assets](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS02%20-%20Inventory%20and%20Control%20of%20Software%20Assets.md)
