@@ -2,7 +2,7 @@
 
 ## Overview
 
-**What it requires:** Actively manage all software across the environment, including that running on/in:
+**What it requires:** Actively manage all software across the environment, including programs running on/in:
  - User Workstations
  - Servers and Containers
  - Kiosks
