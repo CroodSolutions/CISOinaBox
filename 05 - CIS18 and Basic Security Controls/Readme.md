@@ -2,7 +2,11 @@
 
 For a general overview of the CIS18 controls and how they align with MITRE ATT&CK, check out [this](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/MITRE%20ATT%26CK%20and%20CIS18.md) section.
 
-Alternatively, we have some more detailed articles on each control, assembled into a flow.  **Under Construction**
+For a more detailed look, check out the articles we have assembled for each control, organized by:
+ - Logical groupings of controls, according to how you may want to think of them when building out a security program.
+ - Controls listed in proper order, as they appear in CIS18. 
+
+Note that this section is: **Still Under Construction**
 
 ## Logical Flow of Applying CIS18 Controls (According to Mike)
 
