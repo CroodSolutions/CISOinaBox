@@ -20,6 +20,8 @@ It is frequently said that you cannot protect what you do not know about.  These
 
 ### Protecting Data
 
+These controls relate to understanding what data you have, where it exists, and how to protect and recover that data.  
+
 [CIS03 - Data Protection](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS03%20-%20Data%20Protection.md)
 
 
@@ -28,12 +30,15 @@ It is frequently said that you cannot protect what you do not know about.  These
 
 ### Identity and Access Management 
 
+Controls related to identity and access, including account lifecycle management, privildged access, single sign-on, and secure authentication principles such as multi-factor authentication (MFA) and zero trust network access (ZTNA).
 
 [CIS05 - Account Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS05%20-%20Account%20Management.md)
 
 [CIS06 - Access Control Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS06%20-%20Access%20Control%20Management.md)
 
 ### Managing Vulnerabilities and Risks
+
+These controls include understanding and managing vulnerabilities across assets, software, and infrastructure - as well as, secure development and managing third-party service providers. Finally, this section includes the broad category of penetration testing, which includes red/purple team work, assume breach, adversary emulation, and other methods to provide assurance that expected vs actual performance of the defensive posture are in alignment. 
 
 [CIS07 - Continuous Vulnerability Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS07%20-%20Continuous%20Vulnerability%20Management.md)
 
@@ -45,11 +50,21 @@ It is frequently said that you cannot protect what you do not know about.  These
 
 ### Email and Web Protections
 
+These controls relate to protecting against attacks that come inbound via email, chat, compromised web sites, or other methods involving a user. They often involve a user taking one of these actions:
+ - Clicking a link.
+ - Opening an attachment.
+ - Visiting a compromised or attacker controlled web site.
+ - Plugging in a USB or other malicious device.
+ - Running malicious software (marketplace or social engineering).
+ - Giving up an MFA token. 
+
 [CIS09 - Email and Web Browser Protections](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS09%20-%20Email%20and%20Web%20Browser%20Protections.md)
 
 [CIS14 - Security Awareness and Skills Training](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS14%20-%20Security%20Awareness%20and%20Skills%20Training.md)
 
 ### Network Defense
+
+These controls relate to how a network is setup and what attack opportunities it may provide, as well as monitoring for when something suspicious happens on the network.  
 
 [CIS12 - Network Infrastructure Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS12%20-%20Network%20Infrastructure%20Management.md)
 
