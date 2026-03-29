@@ -7,10 +7,9 @@
 And, that is obviously, a lot. So, how do we approach this topic in the real world?
 
  - Here are some tips as a general flow for getting started with data protection:
-  - 
-  - Start by brainstorming with people who know the environment and map out as much as you can (you will still need to validate later).
-  - Examine what platform solutions that are already in place, have data discovery or DLP solutions (e.g., O365, Google, etc.).
-  - Determine gaps in visibility and enforcement, and prioritize these accordance to probability (of serious issue) and impact (if issue).
+   - Start by brainstorming with people who know the environment and map out as much as you can (you will still need to validate later).
+   - Examine what platform solutions that are already in place, have data discovery or DLP solutions (e.g., O365, Google, etc.).
+   - Determine gaps in visibility and enforcement, and prioritize these accordance to probability (of serious issue) and impact (if issue).
  - Examine solutions to bridge these gaps, considering:
    - Unstructured data (file shares, SharePoint, Google Drive, Box, etc.)
    - Structured data (databases and Enterprise Software / SaaS applications)
