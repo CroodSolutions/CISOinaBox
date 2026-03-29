@@ -1,4 +1,4 @@
-## Introduction and Overview
+# Introduction and Overview
 
 For a general overview of the CIS18 controls and how they align with MITRE ATT&CK, check out [this](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/MITRE%20ATT%26CK%20and%20CIS18.md) section.
 
@@ -88,7 +88,8 @@ This section outlines controls specific to stopping malware, such as antivirus, 
 
 [CIS10 - Malware Defenses](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS10%20-%20Malware%20Defenses.md)
 
-## Listing of CIS18 Controls (In Sequential Order)
+# Listing of CIS18 Controls 
+## (In Sequential Order)
 
 [CIS01 - Inventory and Control of Enterprise Assets](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS01%20-%20Inventory%20and%20Control%20of%20Enterprise%20Assets.md)
 
