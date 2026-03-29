@@ -20,8 +20,8 @@ There are a few critical scenarios that need to be figured out for account manag
    - Has access removal been validated, across all of the relevant scenarios?
    - Is there a clear / well-defined process for returning contractors or employees?
  - Access Logging
-  - Are authentiction events logged?
-  - Are access logs available?
+   - Are authentiction events logged?
+   - Are access logs available?
 
 
 ## MITRE ATT&CK Techniques Mitigated 
