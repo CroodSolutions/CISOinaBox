@@ -76,15 +76,19 @@ These controls relate to how a network is setup and what attack opportunities it
 
 ### Detection and Response
 
+Controls related to seeing attacks and issues, prioritizing, and responding to / escalating as needed.
+
 [CIS17 - Incident Response Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS17%20-%20Incident%20Response%20Management.md)
 
 [CIS08 - Log Management](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS08%20-%20Audit%20Log%20Management.md)
 
 ### Malware Defense 
 
+This section outlines controls specific to stopping malware, such as antivirus, endpoint detection and response (EDR), and malware sandboxing.
+
 [CIS10 - Malware Defenses](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS10%20-%20Malware%20Defenses.md)
 
-## Listing of CIS18 Controls  
+## Listing of CIS18 Controls (In Sequential Order)
 
 [CIS01 - Inventory and Control of Enterprise Assets](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS01%20-%20Inventory%20and%20Control%20of%20Enterprise%20Assets.md)
 
@@ -123,6 +127,10 @@ These controls relate to how a network is setup and what attack opportunities it
 [CIS18 - Penetration Testing](https://github.com/CroodSolutions/CISOinaBox/blob/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS18%20-%20Penetration%20Testing.md)
 
 ## Resources and References 
+
+[CIS Critical Security Controls](https://www.cisecurity.org/controls)
+
+[MITRE ATT&CK](https://attack.mitre.org/)
 
 
 
