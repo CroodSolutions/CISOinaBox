@@ -39,4 +39,8 @@ There are a few critical scenarios that need to be figured out for account manag
 | Privileged Access Management (PAM) | Secures, rotates, and audits privileged account usage | CyberArk, BeyondTrust, Delinea (Thycotic/Centrify), HashiCorp Vault |
 | Directory Services | Central identity store and authentication | Microsoft Entra ID (Azure AD), Okta, Ping Identity |
 
+## See Also
+
+Also, be sure to visit the CIS18 section on [Access Control Management](https://github.com/CroodSolutions/CISOinaBox/edit/main/05%20-%20CIS18%20and%20Basic%20Security%20Controls/CIS06%20-%20Access%20Control%20Management.md) and the CISO-in-a-Box section on [Identity and Access Management](https://github.com/CroodSolutions/CISOinaBox/tree/main/09%20-%20Identity%20and%20Access%20Management).
+
 ---
