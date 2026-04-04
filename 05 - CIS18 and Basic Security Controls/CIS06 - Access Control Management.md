@@ -25,6 +25,15 @@ Account types / access levels may include:
 
 It is important to identify different roles and group memberships (including Active Directory/Entra) and scope out the minimum required permissions for a role to be effective.  
 
+**Access Control Management** also needs to include the proper safeguards to prevent unauthorized access:
+ - **Multi-Factor Authentication** (MFA)
+ - Strong Secrets, Passwords, and Pass-Phrases
+ - Yubikey
+ - Logging and Monitoring
+
+So often a compromise is due to weak or guessable passwords, such as Summer2026!, a lack of MFA, or various techniques to get around MFA. Such techniques to remain aware of and mitigate against include:
+ - 
+
 ## MITRE ATT&CK Techniques Mitigated 
 
 **ATT&CK Relevance:** Mitigates Lateral Movement (T1021 — Remote Services), Privilege Escalation (T1078), and Initial Access (T1078 — Valid Accounts with stolen credentials). MFA alone blocks the vast majority of credential-stuffing and password-spray attacks.
@@ -39,6 +48,7 @@ It is important to identify different roles and group memberships (including Act
 | Single Sign-On (SSO) | Centralizes authentication to reduce credential sprawl | Okta, Microsoft Entra ID, Ping Identity, OneLogin |
 | Zero Trust Network Access (ZTNA) | Replaces VPN with identity-aware, least-privilege access | Zscaler Private Access, Palo Alto Prisma Access, Cloudflare Access, Netskope |
 | Privileged Access Management (PAM) | Controls and audits privileged sessions | CyberArk, BeyondTrust, Delinea |
+| Account Takeover Protection (ATO) | Identifies and alerts on account compromise | Abnormal, Trusona, Varonis, Crowdstrike Falcon Identity |
 
 ---
 
