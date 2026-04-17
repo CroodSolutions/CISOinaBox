@@ -3,7 +3,7 @@
 # Exit on error
 set -e
 
-# Variables
+# Configuration - update these for your deployment
 WIKI_REPO="git@github.com:CroodSolutions/CISOinaBox.wiki.git"
 TMP_DIR="temp_wiki"
 
@@ -54,9 +54,9 @@ if [ -f "../CONTRIBUTING.md" ]; then
   cp "../CONTRIBUTING.md" "Contributing.md"
 fi
 
-# Create a Home page
-if [ -f "../Start Here.md" ]; then
-  cp "../Start Here.md" "Home.md"
+# Create a Home page from the main README if available
+if [ -f "../README.md" ]; then
+  cp "../README.md" "Home.md"
 else
   echo "CISO in a Box" > Home.md
 fi

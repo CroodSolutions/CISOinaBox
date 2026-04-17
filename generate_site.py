@@ -6,9 +6,23 @@ import re
 import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
-from textwrap import dedent
 from urllib.parse import quote, unquote, urlparse
 
+from site_config import (
+    GITHUB_BRANCH,
+    GITHUB_ORG,
+    GITHUB_REPO_NAME,
+    GITHUB_REPO_URL,
+    HOMEPAGE_MODULES,
+    NAVBAR_CONFIG,
+    PATHWAY_CARDS,
+    SITE_AUTHOR,
+    SITE_BASEURL,
+    SITE_DESCRIPTION,
+    SITE_EMAIL,
+    SITE_TITLE,
+    SITE_URL,
+)
 
 ROOT = Path(__file__).resolve().parent
 SITE_ROOT = ROOT / "ciso-in-a-box-site"
@@ -17,8 +31,8 @@ ASSETS_ROOT = SITE_ROOT / "assets" / "content"
 SECTION_DIR_RE = re.compile(r"^(\d+)\s*-\s*(.+)$")
 README_NAMES = {"readme.md"}
 REPO_PREFIXES = (
-    "https://github.com/CroodSolutions/CISOinaBox/blob/main/",
-    "https://github.com/CroodSolutions/CISOinaBox/tree/main/",
+    f"{GITHUB_REPO_URL}/blob/{GITHUB_BRANCH}/",
+    f"{GITHUB_REPO_URL}/tree/{GITHUB_BRANCH}/",
 )
 
 
@@ -653,67 +667,186 @@ def write_contributing_page(page: Page, lookup: dict[Path, str]) -> None:
     write_text(page.output_path, front_matter(page) + body)
 
 
+def _build_navbar_yaml() -> str:
+    lines: list[str] = []
+    for group in NAVBAR_CONFIG:
+        lines.append(f'  "{group["label"]}":')
+        for item in group["items"]:
+            label = item["label"]
+            if "url" in item and item["url"] == "github":
+                lines.append(f'    - "{label}": "{GITHUB_REPO_URL}"')
+            elif "page" in item:
+                lines.append(f'    - "{label}": "/{item["page"]}/"')
+            elif "section" in item:
+                meta = SECTION_METADATA.get(item["section"])
+                slug = meta.slug if meta else item.get("fallback_slug", "")
+                lines.append(f'    - "{label}": "/{slug}/"')
+    return "\n".join(lines)
+
+
 def write_config() -> None:
-    config = dedent(
-        """\
-        ###########################################################
-        ### CISOinaBox Jekyll Configuration
+    navbar = _build_navbar_yaml()
+    lines = [
+        "###########################################################",
+        "### CISOinaBox Jekyll Configuration",
+        "",
+        f"title: {SITE_TITLE}",
+        f"author: {SITE_AUTHOR}",
+        f"email: {SITE_EMAIL}",
+        "description: >-",
+        f"  {SITE_DESCRIPTION}",
+        f'baseurl: "{SITE_BASEURL}"',
+        f'url: "{SITE_URL}"',
+        "",
+        "navbar-links:",
+        navbar,
+        "",
+        "remote_theme: daattali/beautiful-jekyll@6.0.1",
+        "plugins:",
+        "  - jekyll-remote-theme",
+        "  - jekyll-include-cache",
+        "  - jekyll-feed",
+        "  - jekyll-sitemap",
+        "  - jekyll-seo-tag",
+        "",
+        "site-css:",
+        '  - "/assets/css/custom.css"',
+        "",
+        'timezone: "America/Phoenix"',
+        "highlighter: rouge",
+        "markdown: kramdown",
+        "",
+        'navbar-col: "#0e0e0e"',
+        'navbar-text-col: "#FFFFFF"',
+        'navbar-border-col: "#0e0e0e"',
+        'page-col: "#FFFFFF"',
+        'text-col: "#0e0e0e"',
+        'link-col: "#289dff"',
+        'hover-col: "#289dff"',
+        'footer-col: "#0e0e0e"',
+        'footer-text-col: "#FFFFFF"',
+        'footer-link-col: "#289dff"',
+        'footer-hover-col: "#289dff"',
+        "",
+        "social-network-links:",
+        f"  github: {GITHUB_ORG}",
+        "",
+        'site-logo: "/assets/img/avatar-icon.png"',
+    ]
+    write_text(SITE_ROOT / "_config.yml", "\n".join(lines) + "\n")
 
-        title: CISO-in-a-Box
-        author: CISOinaBox Contributors
-        email: contributors@ciso-in-a-box.org
-        description: >-
-          A comprehensive guide to cybersecurity and risk management for organizations, aspiring CISOs, and security professionals.
-        baseurl: "/ciso-in-a-box-site"
-        url: "https://ciso-in-a-box.github.io"
 
-        navbar-links:
-          "Browse the Guide":
-            - "Start Here": "/getting-started/"
-            - "Browse All Sections": "/sections/"
-            - "Resources": "/resources/"
-          "Learning Paths":
-            - "The New CISO": "/getting-started/"
-            - "The Program Builder": "/security-architecture-and-engineering/"
-            - "The Strategist": "/governance-risk-compliance-grc-strategy-guide-for-cybersecurity-programs/"
-          "Project and Source":
-            - "Contributing": "/contributing/"
-            - "GitHub Repo": "https://github.com/CroodSolutions/CISOinaBox"
+def write_index_page() -> None:
+    def perm(slug: str) -> str:
+        return "{{ '" + f"/{slug}/" + "' | relative_url }}"
 
-        remote_theme: daattali/beautiful-jekyll@6.0.1
-        plugins:
-          - jekyll-remote-theme
-          - jekyll-include-cache
-          - jekyll-feed
-          - jekyll-sitemap
-          - jekyll-seo-tag
+    def section_perm(number: int) -> str:
+        meta = SECTION_METADATA.get(number)
+        return perm(meta.slug) if meta else "/"
 
-        site-css:
-          - "/assets/css/custom.css"
+    start_url = section_perm(1)
+    sections_url = perm("sections")
 
-        timezone: "America/Phoenix"
-        highlighter: rouge
-        markdown: kramdown
+    pathways_html: list[str] = []
+    for card in PATHWAY_CARDS:
+        link_url = section_perm(card["link_section"])
+        topics_html = "\n".join(f"      <li>{t}</li>" for t in card["topics"])
+        color = card["color"]
+        border_style = f' style="border-top-color: {color};"' if color != "#289dff" else ""
+        icon_color_style = f' style="color: {color};"' if color != "#289dff" else ""
+        btn_style = f' style="color: {color}; border-color: {color};"' if color != "#289dff" else ""
+        pathways_html.extend(
+            [
+                f'  <div class="pathway-card"{border_style}>',
+                f'    <div class="pathway-icon"{icon_color_style}>',
+                f'      <i class="{card["icon"]}"></i>',
+                "    </div>",
+                f'    <div class="pathway-title">{card["title"]}</div>',
+                f'    <div class="pathway-desc">',
+                f'      {card["description"]}',
+                "    </div>",
+                '    <ul class="topic-list">',
+                topics_html,
+                "    </ul>",
+                f'    <a href="{link_url}" class="pathway-btn"{btn_style}>',
+                f'      {card["title"].split()[0]} &rarr;</a>',
+                "  </div>",
+            ]
+        )
 
-        navbar-col: "#0e0e0e"
-        navbar-text-col: "#FFFFFF"
-        navbar-border-col: "#0e0e0e"
-        page-col: "#FFFFFF"
-        text-col: "#0e0e0e"
-        link-col: "#289dff"
-        hover-col: "#289dff"
-        footer-col: "#0e0e0e"
-        footer-text-col: "#FFFFFF"
-        footer-link-col: "#289dff"
-        footer-hover-col: "#289dff"
+    modules_html: list[str] = []
+    for mod in HOMEPAGE_MODULES:
+        mod_url = section_perm(mod["section"])
+        modules_html.extend(
+            [
+                f'  <a href="{mod_url}" class="module-card">',
+                f'    <div class="module-icon"><i class="{mod["icon"]}"></i></div>',
+                "    <div class=\"module-info\">",
+                f'      <h4>{mod["short_title"]}</h4>',
+                f'      <span>{mod["subtitle"]}</span>',
+                "    </div>",
+                "  </a>",
+            ]
+        )
 
-        social-network-links:
-          github: CroodSolutions
-
-        site-logo: "/assets/img/avatar-icon.png"
-        """
+    content = "\n".join(
+        [
+            "---",
+            "layout: home",
+            'title: "CISO-in-a-Box"',
+            'subtitle: "Your Complete Cybersecurity Guide"',
+            "permalink: /",
+            "head-extra: ",
+            "  - custom.html",
+            "---",
+            "",
+            '<div class="hero-section">',
+            '  <h1 class="hero-title">The Open Source CISO Guide \U0001f6e1\ufe0f</h1>',
+            '  <p class="hero-subtitle">',
+            '    From "Day 1" to program maturity. A community-driven framework for building, managing, and scaling modern cybersecurity programs.',
+            "  </p>",
+            '  <div style="margin-top: 30px;">',
+            f'    <a href="{start_url}" class="btn btn-primary btn-lg" style="border-radius: 50px; padding: 12px 30px;">Start the Journey</a>',
+            f'    <a href="{sections_url}" class="btn btn-outline-primary btn-lg" style="border-radius: 50px; padding: 12px 30px; margin-left: 10px;">',
+            "      Browse Sections",
+            "    </a>",
+            f'    <a href="{GITHUB_REPO_URL}" class="btn btn-outline-dark btn-lg" style="border-radius: 50px; padding: 12px 30px; margin-left: 10px;">',
+            '      <i class="fab fa-github"></i> View Source',
+            "    </a>",
+            "  </div>",
+            "</div>",
+            "",
+            '<div class="section-header">',
+            '  <h2 class="section-title">Choose Your Path</h2>',
+            '  <p class="section-desc">Tailored guides depending on where you are in your journey.</p>',
+            "</div>",
+            "",
+            '<div class="pathways-grid">',
+            "\n".join(pathways_html),
+            "</div>",
+            "",
+            '<div class="section-header">',
+            '  <h2 class="section-title">Core Knowledge Modules</h2>',
+            '  <p class="section-desc">Comprehensive guides covering every domain of information security.</p>',
+            "</div>",
+            "",
+            '<div class="modules-grid">',
+            "\n".join(modules_html),
+            "</div>",
+            "",
+            '<div class="community-section">',
+            "  <h3>Built by the Community, For the Community \U0001f91d</h3>",
+            "  <p>",
+            "    This project is open source. We believe in sharing knowledge to make the digital world safer.",
+            "    <br>Whether you're an expert or just starting, your contribution matters.",
+            "  </p>",
+            f'  <a href="{GITHUB_REPO_URL}/blob/{GITHUB_BRANCH}/CONTRIBUTING.md" class="community-btn">',
+            '    <i class="fas fa-code-branch"></i> Contribute Now',
+            "  </a>",
+            "</div>",
+        ]
     )
-    write_text(SITE_ROOT / "_config.yml", config)
+    write_text(SITE_ROOT / "index.markdown", content + "\n")
 
 
 def generate() -> None:
@@ -727,6 +860,7 @@ def generate() -> None:
     copy_assets()
     write_config()
     write_sections_page(section_pages)
+    write_index_page()
 
     for page in pages:
         if page.permalink == "/contributing/":
