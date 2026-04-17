@@ -664,7 +664,7 @@ def write_config() -> None:
         email: contributors@ciso-in-a-box.org
         description: >-
           A comprehensive guide to cybersecurity and risk management for organizations, aspiring CISOs, and security professionals.
-        baseurl: ""
+        baseurl: "/ciso-in-a-box-site"
         url: "https://ciso-in-a-box.github.io"
 
         navbar-links:
