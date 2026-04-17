@@ -364,7 +364,20 @@ def find_markdown_files(section_dir: Path) -> list[Path]:
 
 def relative_asset_url(path: Path) -> str:
     rel = path.relative_to(ROOT)
-    return "/assets/content/" + "/".join(quote(part) for part in rel.parts)
+    return jekyll_relative_url("/assets/content/" + "/".join(quote(part) for part in rel.parts))
+
+
+def jekyll_relative_url(path: str) -> str:
+    if not path.startswith("/"):
+        path = "/" + path
+    return "{{ '" + path + "' | relative_url }}"
+
+
+def jekyll_permalink(path: str, fragment: str | None = None) -> str:
+    url = jekyll_relative_url(path)
+    if fragment:
+        return f"{url}#{fragment}"
+    return url
 
 
 def title_from_file(path: Path, fallback: str) -> str:
@@ -499,7 +512,7 @@ def rewrite_links(
                     break
 
         if target in permalink_lookup:
-            url = permalink_lookup[target]
+            url = jekyll_permalink(permalink_lookup[target])
         elif target.is_file() and target.suffix.lower() != ".md":
             url = relative_asset_url(target)
         else:
@@ -548,7 +561,7 @@ def build_related_links(page: Page) -> str:
         return ""
     lines = ["## Additional Pages in This Section", ""]
     for related in page.related_pages:
-        lines.append(f"- [{related.title}]({related.permalink})")
+        lines.append(f"- [{related.title}]({jekyll_permalink(related.permalink)})")
     return "\n".join(lines) + "\n"
 
 
@@ -557,19 +570,25 @@ def build_section_pager(page: Page) -> str:
     if page.previous_page:
         prev = page.previous_page
         lines.extend(
-            ["", f"Previous: [{prev.section_meta.source_title}]({prev.permalink})"]
+            [
+                "",
+                f"Previous: [{prev.section_meta.source_title}]({jekyll_permalink(prev.permalink)})",
+            ]
         )
     if page.next_page:
         nxt = page.next_page
-        lines.extend(["", f"Next: [{nxt.section_meta.source_title}]({nxt.permalink})"])
+        lines.extend(
+            [
+                "",
+                f"Next: [{nxt.section_meta.source_title}]({jekyll_permalink(nxt.permalink)})",
+            ]
+        )
     return "\n".join(lines) + ("\n" if lines else "")
 
 
 def build_child_intro(page: Page) -> str:
     assert page.section_meta is not None
-    return f"[Back to {page.section_meta.source_title}](/{{}}/)\n\n".format(
-        page.section_meta.slug
-    )
+    return f"[Back to {page.section_meta.source_title}]({jekyll_permalink(page.section_meta.slug)})\n\n"
 
 
 def copy_assets() -> None:
@@ -613,7 +632,8 @@ def sections_cards(section_pages: list[Page]) -> str:
             )
             blocks.extend(
                 [
-                    '<a class="section-browser-card" href="%s">' % page.permalink,
+                    '<a class="section-browser-card" href="%s">'
+                    % jekyll_permalink(page.permalink),
                     '  <div class="section-browser-number">%s</div>'
                     % page.section_meta.number,
                     '  <div class="section-browser-body">',
