@@ -789,7 +789,7 @@ def write_index_page() -> None:
                 topics_html,
                 "    </ul>",
                 f'    <a href="{link_url}" class="pathway-btn"{btn_style}>',
-                f'      {card["title"].split()[0]} &rarr;</a>',
+                f'      {card["title"].removeprefix("The ")} &rarr;</a>',
                 "  </div>",
             ]
         )
