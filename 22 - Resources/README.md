@@ -97,6 +97,7 @@
 | --- | --- |
 | [US Data Breach Law Interactive map - Baker Law](https://www.bakerlaw.com/us-data-breach-interactive-map/) | An interactive map of US Data Breach Laws  |
 | [AI Incident Database](https://incidentdatabase.ai/) | Database from the last few years of AI-related incidents.  |
+| [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) | Open database of real-world AI agent security incidents since January 2025 (prompt injection, poisoned agent packages, agents deleting production data), each linked to its primary sources and marked as a confirmed-victim case or a research demonstration.  |
 | [Cyber Loss Data Types](https://www.advisenltd.com/data/cyber-loss-data/) | A Visual overview of Cyber Risk Loss Types |
 | [Reasonable IR Team Expectations - Leslie Carhartt blog](https://tisiphone.net/2021/05/11/reasonable-ir-team-expectations/) | Blog article from industry leader Leslie Carhartt on concrete expectations from a mature Incident Response team: What should the company be able to provide and deliver?  |
 | [Orange Cyber Defense](https://www.orangecyberdefense.com/) | Europe-based firm that conducts threat research and intelligence. May contain helpful directions or resources.  |
