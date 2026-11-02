@@ -238,6 +238,12 @@
 | [National Credit Union ISAO - NCU-ISAO](https://ncuisao.org/) | a strategic collaborative partnership established the National Credit Union Information Sharing & Analysis Organization (NCU-ISAO) - See RESOURCE LINKS section on website |
 | [Health-ISAC - Collaborating for Resiliance in Health](https://health-isac.org/) | Health-ISAC empowers health sector organizations to prevent, detect, and respond to cyber and physical security events |
 
+### Vendor Risk Management
+
+| Link | Description |
+| --- | --- |
+| [RMM Vendor Due-Diligence Evidence Register](https://izikipizi.github.io/nizlo-msp-operations-resources/rmm-vendor-due-diligence-evidence-register.html) | Free, vendor-neutral 30-control register for documenting sources, owners, test results, exceptions, and approve, remediate, or reject decisions during RMM evaluation. Maintained by Nizlo; it does not certify vendors or replace legal, security, privacy, or procurement review. |
+
 ### CISO Maturity Models
 
 | Link | Description | 
